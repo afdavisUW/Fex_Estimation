@@ -1,0 +1,58 @@
+NMSE .mat files
+run no 1 finished 4/17/18 used GQGt(3,3) = (0.9*STDFex)^2 first time that all the runs worked direct ID
+run no 2 uses a static GQGt(3,3) = 2000; to see if this provides better results for identification 
+-> It does not make things better, the only run that is better is run 2 and it goes from 0.50 to 0.51. 
+	all of the other terms either stay the same or get worses going from run 1 to 2.
+run no 3 finished 4/19/18 used GQGt(3,3) = (0.9*STDFex)^2 now the NMSE of the water particle estimation is included
+run no 4 same as 3 except (0.95*STDFex)^2 is used. this is better by a very small amount.
+run no 5 is a run of all 17 wave climates for 30 seconds using the disturbance estimation with 0.95*stdFex^2 3 disturbance frequencies
+run no 6 is a run of all 17 using the disturbance estimation method with 2 frequencies. o.95*Fex
+run no 7 "" with 1 frequencies using the disturbance method. note the process noise needed to be lowered (0.8*...) and this took a LONG time
+run no 8 "" back to 0.95*Fex uses 4 frequencies for disturbance estimation
+run no 9 "" 5 frequencies
+run no 10 3rd order disturbance method Process noise lowered to 0.75 with subsampleNo = 1. (for reference)
+run no 11 3rd order disturbance "" subSampleNo 2
+run no 12 "" subSampleNo 5
+run no 13 "" subSampleNo 10
+run no 14 "" subSampleNo 20
+run no 15 "" subSampleNo 40
+run no 16 Direct ID with 0.75 Fex process noise subSample 1 (for ref)
+run no 17 Direct ID, 0.75 Fex subSample 2  (rerun)
+run no 18 Direct ID 0.75 Fex subSample 5
+run no 19 Direct ID 0.75 Fex subSample 10
+run no 20 Direct ID 0.75 Fex subSample 20
+run no 21 Direct ID 0.75 Fex subSample 40
+run no 22 Direct ID 0.9 Fex noiseVal = 5
+run no 23 Direct ID 0.9 Fex noiseVal = 10 
+run no 24 Direct ID 0.9 Fex noiseVal = 50
+run no 25 Direct ID 0.9 Fex noiseVal = 100
+run no 26 Direct ID 0.9 Fex noiseVal = 500 
+run no 27 Direct ID 0.9 Fex noiseVal = 1000 results in some NaN values
+run no 28 Direct ID 0.9 Fex noiseVal = 300
+run no 29 Direct ID 0.9 Fex noiseVal = 75
+run no 30 Disturb ID 0.9 Fex noiseVal = 5
+run no 31 Disturb ID 0.9 Fex noiseVal = 10
+run no 32 Disturb ID 0.9 Fex noiseVal = 50
+run no 33 Disturb ID 0.9 Fex noiseVal = 100
+run no 34 Disturb ID 0.9 Fex noiseVal = 300
+run no 35 Disturb ID 0.9 Fex noiseVal = 500
+run no 36 Disturb ID 0.9 Fex noiseVal = 75
+run no 37 Direct ID 0.9 Fex RadSS = 1
+run no 38 Disturb ID 0.9 Fex RadSS = 1
+run no 39 Direct ID 0.9 Fex RadSS = 2
+run no 40 Disturb ID 0.9 Fex Rad SS = 2
+run no 41 Direct ID 0.9 Fex RadSS = 3
+run no 42 Disturb ID 0.9 Fex RadSS = 3
+run no 43 Direct ID 0.9 Fex RadSS = 4
+run no 44 Disturb ID 0.9 Fex RadSS = 4
+run no 45 Direct ID 0.9 Fex RadSS = 5
+run no 46 Disturb ID 0.9 Fex RadSS = 5
+run no 47 Direct ID 0.75 Fex subSample = 100
+run no 48 Disturb ID 0.75 Fex subsample = 100
+
+
+
+
+
+
+
